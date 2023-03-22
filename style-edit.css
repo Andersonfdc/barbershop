@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap');
+
+
+/*====  RESET ============================ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+a {
+    text-decoration: none;
+}
+
+i{
+    text-decoration: none;
+    color: #592b02ae;
+}
+
+
+
+/*====  LAYOUT ============================ */
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(https://images.unsplash.com/photo-1567427218122-556adceef8fe?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    background-image: linear-gradient(45deg, #592b02ed,#bf8360ed);
+    padding: 6px;
+    width: 350px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 20px 0 #261A15;
+}
+
+/*====  FORMS ============================ */
+form {
+    position: absolute;
+    margin-top: 80px;
+    transition: .5s;
+    width: 300px;
+    height: 400px;
+}
+
+.buttonsForm {
+    margin-top: 30px;
+    position: relative;
+    border-radius: 30px;
+    box-shadow: 0 0 7px 0 #261A15;
+}
+
+.buttonsForm button {
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    position: relative;
+    padding: 10px 29px;
+}
+
+.buttonsForm #btnSignup{
+    color: white;
+}
+
+.btnColor {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #8C543F, #BF8563);
+    border-radius: 30px;
+    transition: .3s;
+    box-shadow: 0 0 7px 0 #261a15db;
+}
+
+.buttonsFormClose {
+    margin-top: -80px;
+    left: 140px;
+    position: relative;
+    border-radius: 30px;
+    box-shadow: 0 0 20px 0 #261A15;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"] {
+    border: none;
+    margin-top: 16px;
+    border-radius: 60px;
+    padding: 8px 0 8px 35px;
+    outline: none;
+    width: 100%;
+}
+button[type="submit"] {
+    background: #8C543F;
+    color: white;
+    border-radius: 30px;
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 8px 0 8px 15px;
+    font-size: 15px;
+    margin-top: 30px;
+    cursor: pointer;
+    box-shadow: 0 0 7px 0 #261a15d5;
+}
+
+i {
+    position: absolute;
+    left: 0;
+    padding: 10px 10px;
+}
+
+/*====  ICONS ============================ */
+
+.iUser {
+    top: 13px;
+    color: #8C8C8C;
+}
+
+.iTelefone{
+    top: 67px;
+    color: #8C8C8C;;
+}
+
+.iEmailUp {
+    top: 120px;
+    color: #8C8C8C;
+}
+
+.iPasswordUp {
+    top: 170px;
+    color: #8C8C8C;
+}
+
+.iEye{
+    top: 173px;
+    margin-left: 260px;
+    cursor: pointer;
+    color: #261A15;
+}
+
+.iEye:hover{
+    color: #8C543F;
+}

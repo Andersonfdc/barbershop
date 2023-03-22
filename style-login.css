@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap');
+
+/*====  RESET ============================ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+   
+/*====  VARIABLES ============================ */
+:root {
+    --header-height: 4.5rem;
+
+
+    /* HSL color mode */
+    --base-color: #261A15;
+    --base-color-second: #BFA59B;
+    --base-color-alt: #BF8360;
+    --title-color: #A66249;
+    --text-color: #3D3E40;
+    --text-color-light: #FAFAFF;
+    --body-color: #fafafa;
+
+    /* fonts */
+    --title-font-size: 1.875rem;
+    --subtitle-font-size: 1rem;
+
+    --title-font: 'Poppins', sans-serif;
+    --body-font: 'DM Sans', sans-serif;
+}
+
+/*----------  LAYOUT --------- */
+
+button {
+    background-color: #8C543F;
+}
+
+.title {
+    font: 700 var(--title-font-size) var(--title-font);
+    color: var(--title-color);
+  
+  }
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(https://images.unsplash.com/photo-1567427218122-556adceef8fe?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.container {
+    background-image: linear-gradient(45deg, #592b02ed,#bf8360ed);
+    padding: 6px;
+    width: 350px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 20px 0 #261A15;
+}
+
+
+/*====  FORMS ============================ */
+form {
+    position: absolute;
+    margin-top: 80px;
+    transition: .5s;
+    width: 300px;
+    height: 400px;
+}
+
+.buttonsForm {
+    margin-top: 40px;
+    position: relative;
+    border-radius: 30px;
+    box-shadow: 0 0 7px 0 #261A15;
+}
+
+
+
+.buttonsForm button {
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    position: relative;
+    padding: 10px 29px;
+}
+
+.buttonsForm #btnSignin{
+    color: white;
+}
+
+.btnColor {
+    position: absolute;
+    width: 108px;
+    height: 100%;
+    background: linear-gradient(to right, #8C543F, #BF8563);
+    border-radius: 30px;
+    transition: .3s;
+    box-shadow: 0 0 7px 0 #261a15db;
+}
+
+
+input[type="text"],
+input[type="password"],
+input[type="tel"] {
+    border: none;
+    margin-top: 13px;
+    margin-bottom: 10px;
+    border-radius: 60px;
+    padding: 8px 0 8px 35px;
+    outline: none;
+    width: 100%;
+}
+
+input[type="email"]{
+    border: none;
+    margin-bottom: 30px;
+    margin-top: 52px;
+    border-radius: 60px;
+    padding: 8px 0 8px 35px;
+    outline: none;
+    width: 100%;
+}
+
+button[type="submit"] {
+    background: #8C543F;
+    color: white;
+    border-radius: 30px;
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 8px 0 8px 15px;
+    font-size: 15px;
+    margin-top: 30px;
+    cursor: pointer;
+    box-shadow: 0 0 7px 0 #261a15d5;
+}
+
+
+i {
+    position: absolute;
+    left: 0;
+    padding: 10px 10px;
+    color: #592b02ae;
+}
+
+/*====  SIGN IN ============================ */
+#signin {
+    left: 25px;
+}
+
+.iEmail {
+    top: 50px;
+    color: #8C8C8C;
+}
+
+.iPassword {
+    top: 125px;
+    color: #8C8C8C;;
+}
+
+.iEye{
+    top: 125px;
+    margin-left: 260px;
+    cursor: pointer;
+}
+
+.iEye:hover{
+    color: #8C543F;
+}
+
+
+/*====  SIGN UP ============================ */
+
+#signup {
+    left: 450px;
+}
+
+.iUser {
+    top: 10px;
+    color: #8C8C8C;;
+}
+
+.iTelefone{
+    top: 68px;
+    color: #8C8C8C;;
+}
+
+.iEmailUp {
+    top: 122px;
+    color: #8C8C8C;;
+}
+
+.iPasswordUp {
+    top: 175px;
+    color: #8C8C8C;;
+}
+
+.iEyeUp{
+    top: 175px;
+    margin-left: 260px;
+    cursor: pointer;
+}
+
+.iEyeUp:hover{
+    color: #8C543F;
+}
+
+
+.buttonsFormClose {
+    margin-top: -80px;
+    left: 140px;
+    position: relative;
+    cursor: pointer;
+}
