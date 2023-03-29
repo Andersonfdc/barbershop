@@ -2,7 +2,8 @@
 <?php
 
   include_once('config.php');  
-  //cadastro
+ 
+  // BUSCA INFO NO BD
   if(!empty($_GET['id'])){
     
     $id = $_GET['id'];
@@ -54,7 +55,7 @@
       <button id="btnSignup">Editar cadastro</button>
     </div>
 
-    <!--Sign up-->
+    <!--APRESENTA INFO DO USER-->
     <form id="signup" action="saveEditUser.php"  method="POST" >
       <input type="text" name="nome" placeholder="Nome" id="nome" value="<?php echo $nome ?>" required />
       <i class="fas fa-user iUser"></i>

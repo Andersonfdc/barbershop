@@ -1,3 +1,4 @@
+//MOSTRA A SENHA
 function mostrarSenha(){
     var inputPass = document.getElementById('senhaSignup')
     var btnShowPass = document.getElementById('btnSenhaEdit')

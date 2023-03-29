@@ -9,7 +9,7 @@ if(!empty($_GET['id'])){
 
     $result = $conexao->query($sqlSelect);
 
-
+    // ALTERA INFO NO BD
     if($result ->num_rows > 0){
 
         $sqlConfirma = "UPDATE usuarios SET statusAgenda ='INDISPONÍVEL' 

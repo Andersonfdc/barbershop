@@ -1,9 +1,12 @@
 <?php
 
+    //Inicio da sessão
     session_start();
-    include_once('config.php');
-    //print_r($_SESSION);
 
+    //import de configurações de conexão
+    include_once('config.php');
+
+    //Verifica se existe conexão vazia, caso exista encerra a sessão de login e direciona a página de login
     if ((!isset($_SESSION['email']) == true) and (!isset($_SESSION['senha']) == true)){
         
         unset($_SESSION['email']);
@@ -11,6 +14,7 @@
         header('Location: login.php');
     }
     
+    //Pesquisa na tabela
     if(!empty($_GET['search'])){
 
         $data = $_GET['search'];
@@ -19,7 +23,7 @@
         LIKE '%$data%' OR email LIKE '%$data%' ORDER BY dataHora DESC";
 
     }else {
-        $sql = "SELECT * FROM usuarios ORDER BY idusuarios DESC";
+        $sql = "SELECT * FROM usuarios ORDER BY dataHora DESC";
     }
     
 
@@ -61,6 +65,7 @@
        
       <a class="logo" href="#"><i class="icon-spartans"></i> Sparta<span> Barbershop</span></a>
         
+        <!-- BARRA DE PESQUISA -->
         <div class="box-search search">
             <input type="search" class="form-control w-100"placeholder="Pesquisar..." id="pesquisar">
             <button onclick="searchData()" type="button" class="btn btn-light">
@@ -72,16 +77,13 @@
         <a href="./index.php" class="logado">   
             <i class="fa-solid fa-right-from-bracket toggle"></i>
         </a>
-
       </nav>
     </header>
 
     <main>       
 
         <section> 
-            
-            
-            
+            <!-- TABELA DO BANCO DE DADOS -->
             <div class="m-5 table-bg">
 
                 <table class="table">
@@ -123,7 +125,7 @@
 
                                         </a>
 
-                                        <a class='btn btn-sm btn-danger' href='delete.php?id=$user_data[idusuarios]'>
+                                        <a class='btn btn-sm btn-danger' href='delete.php?id=$user_data[idusuarios]' alt='teste'>
                                             <svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-trash-fill' viewBox='0 0 16 16'>
                                                 <path d='M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1H2.5zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zM8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5zm3 .5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 1 0z'/>
                                             </svg>
@@ -163,7 +165,9 @@
         </section>
     </main>
     
+    <!-- SCRIPT BOOTSTRAP -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <!-- SCRIPT -->
     <script src="pesquisar.js"></script>
 </body>
 </html>

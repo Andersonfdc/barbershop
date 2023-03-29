@@ -2,6 +2,7 @@
 
     include_once('config.php');
 
+    // ALTERA INFO NO BD
     if(isset($_POST['update'])){
 
             $id = $_POST['id'];

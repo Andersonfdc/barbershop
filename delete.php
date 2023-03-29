@@ -2,6 +2,7 @@
 
     include_once('config.php');  
 
+    // DELETA USUÁRIO DO BD
     if(!empty($_GET['id'])){
         
         $id = $_GET['id'];

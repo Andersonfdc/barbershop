@@ -2,7 +2,7 @@
 <?php
 
   include_once('config.php');  
-  //cadastro
+
   if(!empty($_GET['id'])){
     
     $id = $_GET['id'];
@@ -54,7 +54,7 @@
       <button id="btnSignup">Editar cadastro</button>
     </div>
 
-    <!--Sign up-->
+    <!-- APRESENTA INDO NA TELA -->
     <form id="signup" action="saveEdit.php"  method="POST" >
       <input type="text" name="nome" placeholder="Nome" id="nome" value="<?php echo $nome ?>" required />
       <i class="fas fa-user iUser"></i>

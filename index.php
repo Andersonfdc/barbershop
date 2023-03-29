@@ -110,21 +110,21 @@
           <div class="cards grid">
             <div class="card">
               <i class="icon-icons8-barbeiros-clippers-50"></i>
-              <h3 class="title">Cabelo</h3>
+              <h3 class="title">Cabelo - R$ 25,00</h3>
               <p>
               Um bom corte de cabelo pode realçar a aparência, melhorar a autoestima e refletir a personalidade de quem o usa.
               </p>
             </div>
             <div class="card">
               <i class="icon-icons8-bigode-50"></i>
-              <h3 class="title">Barba</h3>
+              <h3 class="title">Barba - R$ 15,00</h3>
               <p>
               Uma barba bem feita pode conferir um visual elegante e confiante, além de realçar a aparência e personalidade do indivíduo.
               </p>
             </div>
             <div class="card">
               <i class="icon-icons8-cadeira-de-barbeiro-50"></i>
-              <h3 class="title">Cabelo e Barba</h3>
+              <h3 class="title">Cabelo e Barba - R$ 35,00</h3>
               <p>
               Ao combinar um corte de cabelo bem feito com uma barba cuidadosamente aparada e modelada, é possível criar um visual único e elegante que reflete a personalidade e o estilo pessoal de cada indivíduo.
               </p>
@@ -159,12 +159,17 @@
             </ul>
           </div>
         </div>
+
+        <div class="maps">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d126689.78614801442!2d-34.929480492009816!3d-7.119530335025349!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x7acdd515ec18f43%3A0x6d14bf1ce44d91da!2sAv.%20Pres.%20Epit%C3%A1cio%20Pessoa%2C%201213%20-%20Estados%2C%20Jo%C3%A3o%20Pessoa%20-%20PB%2C%2058039-000!3m2!1d-7.1195356!2d-34.8594399!5e0!3m2!1spt-BR!2sbr!4v1679619529359!5m2!1spt-BR!2sbr" width="250" height="250" style="border:0;" allowfullscreen="" style="float:right;" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
       </section>
 
       <div class="divider-1"></div>
 
     </main>
 
+    <!-- Footer -->
     <footer class="section">
       <div class="container grid">
         <div class="brand">
@@ -185,6 +190,7 @@
           ></a>
         </div>
       </div>
+      
     </footer>
 
     <a href="#home" class="back-to-top"><i class="icon-arrow-up"></i></a>
@@ -195,9 +201,6 @@
     
     <!-- main.js -->
     <script src="main.js"></script>
-
-    <!-- Swiper -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
   </body>
 </html>

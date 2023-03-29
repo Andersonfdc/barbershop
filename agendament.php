@@ -1,7 +1,9 @@
 <?php
 
+    //iNICIO DA SESSÃO
     session_start();
 
+    //iNICIO DA SESSÃO
     if((!isset($_SESSION['email']) == true) and (!isset($_SESSION['senha']) == true)){
         
         unset($_SESSION['email']);
@@ -11,8 +13,11 @@
     $logado =  $_SESSION['email'];
     $senha = $_SESSION['senha'];
 
+    //IMPORT DE CONFIGURAÇÕES
     include_once('config.php');
 
+
+    //CONSULTA DE INFORMAÕES DO USUÁRIO NO BD
     $sqlID = "SELECT * FROM usuarios WHERE email ='$logado' and senha= '$senha'";
 
     $resultAgenda = $conexao->query($sqlID);
@@ -29,7 +34,7 @@
 
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="PT-BR">
 <head>
 <head>
     <!-- PAGE INFO -->
@@ -58,12 +63,15 @@
       <nav class="containerNav">
         <a class="logo" href="#"><i class="icon-spartans"></i> Sparta<span> Barbershop</span></a>
 
+        <!-- EDITAR USUÁRIO -->
         <a href='editUser.php?id=<?php echo $id ?>' class="email">
             <?php
-                 echo "$logado"
+                 echo $user_data['nome'];
             ?>
+            
         </a>
         
+        <!-- SAIR -->
         <a href="index.php" class="logado">
         
             <i class="fa-solid fa-right-from-bracket toggle"></i>
@@ -80,7 +88,7 @@
                     <button id="btnSignup">AGENDAR</button>
                 </div>
 
-                    <!--Sign up-->
+                <!-- AGENDAR -->
                 <form id="agendar" action='agendar.php'  method="POST" >
                     
                     <label for="barbeiro">Barbeiro:</label>
@@ -99,7 +107,7 @@
                     </select>
                         
                     <label for="dataHora">Selecione data e hora:</label>
-                    <input type="datetime-local" id="dataHora" name="dataHora">
+                    <input type="datetime-local" id="dataHora" name="dataHora" required>
 
                     <input type="hidden" name="id" value="
 
@@ -114,6 +122,7 @@
 
             </div>
 
+            <!-- AGENDAMENTO -->
             <div class="containerAgenda">
                 <div class="buttonsForm">
                     <div class="btnColor"></div>

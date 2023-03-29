@@ -24,7 +24,7 @@ img {
   --header-height: 4.5rem;
 
   
-  /* HSL color mode */
+  /* color mode */
   --base-color: #261A15 ;
   --base-color-second: #BFA59B;
   --base-color-alt: #BF8360;
@@ -236,6 +236,22 @@ nav .menu ul {
 }
 
 
+span {
+  animation: glitch 3s infinite;
+}
+
+@-webkit-keyframes glitch {
+  1%,29%,31%,71%,99% {
+    text-shadow:
+    0 0 2px var(--base-color-second),
+    0 0 3px var(--base-color-second);
+  }
+  0%,20%,60%,90% {
+    text-shadow: inherit;
+  }
+}
+
+
 /* SEARCH */
 .search{
   display: flex;
@@ -433,6 +449,12 @@ nav.show div.icon-close {
 
 #contact ul li i {
   color: var(--base-color);
+}
+
+.maps{
+  display: flex;
+  margin-left: 25px;
+  margin-top: 25px;
 }
 
 /*====  FOOTER ============================ */

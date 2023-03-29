@@ -1,25 +1,26 @@
 <?php
-include_once('config.php');  
+    include_once('config.php');  
 
-if(!empty($_GET['id'])){
-    
-    $id = $_GET['id'];
+    //INCLUI NO BD O STAUS DE CONFIMAÇÃO DE AGENDAMENTO
+    if(!empty($_GET['id'])){
+        
+        $id = $_GET['id'];
 
-    $sqlSelect = "SELECT * FROM usuarios WHERE idusuarios=$id";
+        $sqlSelect = "SELECT * FROM usuarios WHERE idusuarios=$id";
 
-    $result = $conexao->query($sqlSelect);
+        $result = $conexao->query($sqlSelect);
 
 
-    if($result ->num_rows > 0){
+        if($result ->num_rows > 0){
 
-        $sqlConfirma = "UPDATE usuarios SET statusAgenda ='CONFIRMADO' 
-        WHERE idusuarios=$id";
-        $resultConfirma = $conexao->query($sqlConfirma);  
+            $sqlConfirma = "UPDATE usuarios SET statusAgenda ='CONFIRMADO' 
+            WHERE idusuarios=$id";
+            $resultConfirma = $conexao->query($sqlConfirma);  
+
+        }
 
     }
 
-}
-
-header('Location: admin.php');
+    header('Location: admin.php');
 
 ?>

@@ -10,7 +10,7 @@
 
         $result = $conexao->query($sqlSelect);
 
-
+        // ALTERA INFO NO BD
         if($result ->num_rows > 0){
 
             $sqlDelete = "UPDATE usuarios SET barbeiro= '',servico='',dataHora=' ',statusAgenda = ''
@@ -25,6 +25,8 @@
             $user_data = mysqli_fetch_assoc($resultSelect);
 
             $nome = $user_data['nome'];
+
+            // API WHATSAPP
         
             $curl = curl_init();
         

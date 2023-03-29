@@ -1,4 +1,6 @@
 <?php
+
+    // CONEXÃO COM O BD
     $dbHost = 'Localhost:3307';
     $dbUsername = 'root';
     $dbPassword = '';

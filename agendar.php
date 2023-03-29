@@ -2,6 +2,7 @@
 
     include_once('config.php');
 
+    //UPDATE DE INFORMAÇÕES NO BANCO
     if(isset($_POST['updateAgenda'])){
 
             $id = $_POST['id'];
@@ -22,6 +23,8 @@
             $user_data = mysqli_fetch_assoc($resultSelect);
 
             $nome = $user_data['nome'];
+
+            //API WHATSAPP
         
             $curl = curl_init();
         

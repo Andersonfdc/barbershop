@@ -4,6 +4,7 @@ var btnColor = document.querySelector('.btnColor')
 var btnSignin = document.querySelector('#btnSignin')
 var btnSignup = document.querySelector('#btnSignup')
 
+// DESLIZA O CONTAINER DE LOGIN
 document.querySelector('#btnSignin')
   .addEventListener('click', () => {
     formSignin.style.left = "25px"
@@ -23,6 +24,8 @@ document.querySelector('#btnSignup')
     btnSignin.style.color = "black"
 })
 
+// MOSTRA A SENHA DE LOGIN
+
 function mostrarSenha(){
   var inputPass = document.getElementById('senhaSignin')
   var btnShowPass = document.getElementById('btnSenha')
@@ -37,6 +40,7 @@ function mostrarSenha(){
 
 }
 
+// MOSTRA A SENHA DE CADASTRO
 function mostrarSenhaUp(){
   var inputPass = document.getElementById('senhaSignup')
   var btnShowPass = document.getElementById('btnSenhaUp')
