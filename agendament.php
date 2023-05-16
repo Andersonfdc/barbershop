@@ -106,8 +106,9 @@
                         <option value="Corte e Barba">Corte e Barba</option>
                     </select>
                         
-                    <label for="dataHora">Selecione data e hora:</label>
-                    <input type="datetime-local" id="dataHora" name="dataHora" required>
+                    <label for="dataHora">Selecione data e hora:*</label>
+                    <input type="datetime-local" id="dataHora" name="dataHora" min="2023-04-01T08:00" max="2023-06-30T18:00" required>
+
 
                     <input type="hidden" name="id" value="
 
@@ -117,7 +118,7 @@
                     
                     ">
                     <button type="submit" name="updateAgenda" id="updateAgenda">Salvar</button>
-                    <label for="updateAgenda"><small>*Sujeito a avaliação de disponibilidade</small></label>
+                    <label for="updateAgenda"><small>*Sujeito a avaliação de disponibilidade(Horários entre 08:00 - 18:00 de Seg - Sex)</small></label>
                 </form>
 
             </div>

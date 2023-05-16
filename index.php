@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt_BR">
   <head>
@@ -49,7 +50,7 @@
                     alt="cadeira de barbear"/>
                 </div>
                 <div class="text">
-                  <h2 class="title">Cabelo e barba no estilo mais moderno</h2>
+                  <h2 class="title blink">Cabelo e barba no estilo mais moderno</h2>
                   <p>
                     Barbershop em João Pessoa - PB, especializado em corte de cabelo masculino.
                   </p>

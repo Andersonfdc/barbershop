@@ -1,6 +1,7 @@
 
 <?php
 
+    
   //cadastro
   if(isset($_POST['submitup'])){
     
@@ -36,7 +37,7 @@
 </head>
 <body>
     
-    <div class="container">
+    <div class="container card">
     <div class="buttonsForm">
       <div class="btnColor"></div>
       <button id="btnSignin">Login</button>

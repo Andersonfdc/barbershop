@@ -236,7 +236,7 @@ nav .menu ul {
 }
 
 
-span {
+/* span {
   animation: glitch 3s infinite;
 }
 
@@ -249,7 +249,7 @@ span {
   0%,20%,60%,90% {
     text-shadow: inherit;
   }
-}
+} */
 
 
 /* SEARCH */
