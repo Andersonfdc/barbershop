@@ -1,0 +1,1 @@
+{"version":1,"defects":{"SessionTest::testSessionStart":3,"QueryTest::testQueryExecution":4},"times":{"SessionTest::testSessionStart":0.001,"ConnectionTest::testConfigFileIncluded":0.023,"SearchTest::testEmptySearch":0.001,"QueryTest::testQueryExecution":0.002}}

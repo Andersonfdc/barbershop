@@ -28,7 +28,7 @@
 
             //com login
             if($_POST['emailSignin'] == 'anderson@gmail.com' and $_POST['senhaSignin'] == ('asdf' or 'ASDF')){
-                header('location: admin.php');
+                header('location:admin.php');
             }else{
                 $_SESSION['email'] =  $emailin;
                 $_SESSION['senha'] =  $senhain;
