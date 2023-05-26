@@ -25,9 +25,6 @@
     $user_data =mysqli_fetch_assoc($resultAgenda);
 
     $id = $user_data['idusuarios'];
-    // print_r($user_data['barbeiro']);
-    // print_r($user_data['servico']);
-    // print_r($user_data['dataHora']);
 
     
 ?>

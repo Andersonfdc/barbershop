@@ -18,23 +18,19 @@
         
 
         if(mysqli_num_rows($resultLogin) < 1){
-
-            //sem login
-            unset($_SESSION['email']);
-            unset($_SESSION['senha']);
-            header('Location: login.php');
-
+            echo '<script>alert("Credenciais incorretas. Por favor, tente novamente."); window.location.href=" login.php";</script>';
         }else {
 
-            //com login
             if($_POST['emailSignin'] == 'anderson@gmail.com' and $_POST['senhaSignin'] == ('asdf' or 'ASDF')){
+                $_SESSION['email'] = $emailin; 
+                $_SESSION['senha'] = $senhain; 
                 header('location:admin.php');
             }else{
-                $_SESSION['email'] =  $emailin;
-                $_SESSION['senha'] =  $senhain;
+                $_SESSION['email'] = $emailin; 
+                $_SESSION['senha'] = $senhain; 
                 header('location: agendament.php'); 
             }
-        }
+        }        
 
     }else{
 

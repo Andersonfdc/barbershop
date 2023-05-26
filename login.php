@@ -23,21 +23,17 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
   <title>Sparta Barbershop</title>
-
   <!-- Style -->
   <link rel="stylesheet" href="./style-login.css">
   <link rel="stylesheet" href="./icons/fontawesome/css/all.min.css">
-
   <!-- Icons -->  
   <link rel="shortcut icon" href="images/img.ico" type="image/x-icon">
   <script src="https://kit.fontawesome.com/cf6fa412bd.js" crossorigin="anonymous"></script>
 
 </head>
 <body>
-    
-    <div class="container card">
+  <div class="container card">
     <div class="buttonsForm">
       <div class="btnColor"></div>
       <button id="btnSignin">Login</button>
@@ -54,14 +50,15 @@
       <i class="fas fa-eye iEye" id="btnSenha" onclick="mostrarSenha()"></i>
 
       <button type="submit" name="submitin" id="submitin" >Login</button>
+
     </form>
 
-    <!--Sign up-->
-    <form id="signup" action="login.php"  method="POST" >
+    <!-- Sign up -->
+    <form id="signup" action="login.php" method="POST" onsubmit="return validateForm()">
       <input type="text" name="nome" placeholder="Nome" id="nome" required />
       <i class="fas fa-user iUser"></i>
 
-      <input type="tel" name="telefone" placeholder="Telefone" id="telefone" required />
+      <input type="tel" name="telefone" placeholder="Telefone" id="telefone" required pattern="[0-9]{11}" title="Por favor, insira um número de telefone válido (11 dígitos numéricos)." />
       <i class="fas fa-phone iTelefone"></i>
         
       <input type="text" name="emailSignup" placeholder="Email" id="emailSignup" required />
@@ -81,10 +78,11 @@
     </form>
 
     <div class="buttonsFormClose">
-       <a href="index.php">
+      <a href="index.php">
           <i class="fas fa-circle-xmark "></i>
-       </a> 
+      </a> 
     </div>
+
   </div>
   
 

@@ -1,3 +1,13 @@
+<?php
+    
+    // Verifica se existe uma sessão de login ativa
+    if (isset($_SESSION['emailSignin']) && $_SESSION['senhaSignin'] === true) {
+        // Destroi a sessão
+        session_destroy();
+    }
+
+    
+?>
 
 <!DOCTYPE html>
 <html lang="pt_BR">
